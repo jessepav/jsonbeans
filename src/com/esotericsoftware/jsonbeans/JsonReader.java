@@ -34,6 +34,7 @@ import com.esotericsoftware.jsonbeans.JsonValue.ValueType;
  * The default behavior is to parse the JSON into a DOM containing {@link JsonValue} objects. Extend this class and override
  * methods to perform event driven parsing. When this is done, the parse methods will return null.
  * @author Nathan Sweet */
+@SuppressWarnings("deprecation")
 public class JsonReader {
 	public JsonValue parse (String json) {
 		char[] data = json.toCharArray();
